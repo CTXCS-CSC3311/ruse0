@@ -22,14 +22,13 @@ sequence returns [ArrayList<Integer> vals]
 @init {
     // Add Java code here to create an ArrayList
 }
-     : 
-         // Add the matching rule here and the Java code
+     :   // Add the matching rule here and the Java code
          // to add elements to the ArrayList.
 ;
 
 
 // ------ Lexer rules -------
-// DO NOT MODIFY BELOW THIS POINT!
+// DO NOT MODIFY BELOW THIS POINT! (Except to add '%' Modulo)
 
 WS  :   [ \t]+ -> skip ; // ignore whitespace
 INT :   [0-9]+ ;         // simple integer match
