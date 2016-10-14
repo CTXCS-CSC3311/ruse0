@@ -6,10 +6,34 @@
 
 package ruse0;
 
-/**
- *
- * @author phil
- */
-public class Pair {
-    
+public class Pair extends Object{
+
+  private final Object left;
+  private final Object right;
+
+    public Pair(Object left, Object right) {
+    this.left = left;
+    this.right = right;
+  }
+
+  public Object getLeft() { return left; }
+  public Object getRight() { return right; }
+
+  @Override
+  public int hashCode() { return left.hashCode() ^ right.hashCode(); }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o == null) return false;
+    if (!(o instanceof Pair)) return false;
+    Pair pairo = (Pair) o;
+    return this.left.equals(pairo.getLeft()) &&
+           this.right.equals(pairo.getRight());
+      }
+
+  @Override
+  public String toString() {
+      return "(" + getLeft() + " . " + getRight() + ")";
+  }
+
 }
