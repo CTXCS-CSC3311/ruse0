@@ -1,17 +1,17 @@
-#CSC 3311, Fall 2014, Programming Assignment 2#
-#RUSE0
+# CSC 3311, Fall 2014, Programming Assignment 2
+# RUSE0
 
-##Checkpoints:
-While the entire assignment is due by 10/6, in order to “encourage” you to not start on 10/5, different parts of this assignment will be due at different times
+## Checkpoints:
+While the entire assignment is due on [date], in order to encourage you to make progress, different parts of this assignment will be due at different times (checkpoints CP)
 you may, of course, complete parts early):
 
-	* CP1 - 9/28
+	* CP1 
 
-	* CP2 - 10/12
+	* CP2 
 
-	* CP3 - 10/17
+	* CP3 
 
-	* Extra Credit - 10/17
+	* Extra Credit 
 
 For the first two checkpoints, you will demonstrate, in class, that your code works on the test examples given in the assignment.  If your code does not work on the test examples you will lose (up to) 5 points from your score for the assignment.  If it is evident that you have done no work toward meeting the checkpoint, 10 points will be deducted.  For the last checkpoint, you will turn in the code for your completed parser and I will test the cons pair section and run additional tests to look at the functionality of for the simple and arbitrary length arithmetic sections.  You will work with one other person in the class on this assignment, and you will be evaluating your partner and yourself as part of what you will turn in by the due date.  The form for that evaluation will be forthcoming.
 
@@ -42,14 +42,14 @@ creates a pair of 1 and 2, another of 3 and 4, then hooks those two pairs togeth
 
 (Actually, different Scheme interpreters may display those pairs differently, so:
 	`((1 . 2) . (3 . 4))`
-is a perfectly acceptable alternative printed version.  Mostly, I’m lazy, so that is what my print routine in `Pair.java` does.  Feel free to change it if you want!)
+is a perfectly acceptable alternative printed version.  (Mostly, I’m lazy, so that is what my print routine in `Pair.java` does.  Feel free to change it if you want!)
 The operator `car` returns the left-hand-side of one of these pairs, and the operator cdr returns the right-hand-side.  For example:
 `(car (cons 3 1))` returns simply, 3.
 `(cdr (cons 4 (cons 1 2)))` returns the pair 1, 2 or:`(1 . 2)`
 
 The only type you have to worry about in this exercise is integers, although real Scheme supports strings, floats, etc.
 
-##Simple Arithmetic - CP1
+## Simple Arithmetic - CP1
 The grammar/code you have been given fully implements the `+` (PLUS) operator for two operands, and negative numbers.  Also, the grammar rule is there for `-` (MINUS) but no code to produce a result.  You should complete `-`, `*`, `/`, and `%` (modulo).  Your code should properly parse and evaluate AT LEAST the following expressions:
 
         (+ 4 (- 2 3))
@@ -60,7 +60,7 @@ The grammar/code you have been given fully implements the `+` (PLUS) operator fo
 
 To double-check your results, run some test expressions through Dr. Racket and compare the results.  (Or try out this Scheme interpreter: www.wescheme.org. )  **The modulo operator in Racket is NOT `%` but simply the keyword `modulo`**.
 
-##Arbitrary Length Arithmetic Expressions - CP2
+## Arbitrary Length Arithmetic Expressions - CP2
 
 Extend your arithmetic operators to work on expressions of arbitrary length.  For example, you should properly parse and execute AT LEAST the following expressions:
 
@@ -85,7 +85,7 @@ Note that following ANTLR rule matches any number of expr’s greater than or eq
 To double-check your results, run some test expressions through Dr. Racket and compare the results.  (Or try out this [Scheme interpreter](www.wescheme.org). )  **The modulo operator in Racket is NOT` %` but simply the keyword @`modulo`.  Also `modulo` only takes two arguments
 in Racket, but `%` in your ruse implmentation should take an arbitrary number of arguments!**
 
-##cons pairs - CP3
+## cons pairs - CP3
 
 You need to make your parser correctly parse and evaluate `cons`, `car`, and @`cdr` expressions involving integers.  Java code is provided for you that implements a simple Pair class (see `Pair.java`).  The class `Pair` overrides `tostring()` so you can simply call any standard Java print routine to output your pair.  Your code should properly parse and evaluate at least the following expressions:
 
