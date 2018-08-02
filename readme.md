@@ -1,4 +1,4 @@
-# CSC 3311, Fall 2014, Programming Assignment 2
+# CSC 3311, Programming Assignment 2
 # RUSE0
 
 ## Checkpoints:
