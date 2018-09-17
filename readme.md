@@ -5,13 +5,13 @@
 While the entire assignment is due on [date], in order to encourage you to make progress, different parts of this assignment will be due at different times (checkpoints CP)
 you may, of course, complete parts early):
 
-	* CP1 
+	* CP1 9/27
 
-	* CP2 
+	* CP2 10/11
 
-	* CP3 
+	* CP3 10/18
 
-	* Extra Credit 
+	* Extra Credit 10/18 
 
 For the first two checkpoints, you will demonstrate, in class, that your code works on the test examples given in the assignment.  If your code does not work on the test examples you will lose (up to) 5 points from your score for the assignment.  If it is evident that you have done no work toward meeting the checkpoint, 10 points will be deducted.  For the last checkpoint, you will turn in the code for your completed parser and I will test the cons pair section and run additional tests to look at the functionality of for the simple and arbitrary length arithmetic sections.  You will work with one other person in the class on this assignment, and you will be evaluating your partner and yourself as part of what you will turn in by the due date.  The form for that evaluation will be forthcoming.
 
@@ -87,7 +87,7 @@ in Racket, but `%` in your ruse implmentation should take an arbitrary number of
 
 ## cons pairs - CP3
 
-You need to make your parser correctly parse and evaluate `cons`, `car`, and @`cdr` expressions involving integers.  Java code is provided for you that implements a simple Pair class (see `Pair.java`).  The class `Pair` overrides `tostring()` so you can simply call any standard Java print routine to output your pair.  Your code should properly parse and evaluate at least the following expressions:
+You need to make your parser correctly parse and evaluate `cons`, `car`, and `cdr` expressions involving integers.  Java code is provided for you that implements a simple Pair class (see `Pair.java`).  The class `Pair` overrides `tostring()` so you can simply call any standard Java print routine to output your pair.  Your code should properly parse and evaluate at least the following expressions:
 
     (cons (cons 3 4) 9)
     (cons 5 6)
@@ -108,7 +108,7 @@ Within the new non-terminal `conspair` you will add rules to match `cons`, `car`
 
     conspair returns [Pair p]
 
-##Extra Credit (due with CP3)
+## Extra Credit (due with CP3)
 
 The parser you built in the previous section (probably) allows evaluation of arithmetic *or* evaluation of `cons`/`car`/`cdr` expressions but not mixed together.  In real Scheme, however, these can be mixed as long as the types line up.  For example:
 `(+ 1 (cons 3 4))`
