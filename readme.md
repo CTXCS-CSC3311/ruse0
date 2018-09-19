@@ -2,7 +2,7 @@
 # RUSE0
 
 ## Checkpoints:
-While the entire assignment is due on [date], in order to encourage you to make progress, different parts of this assignment will be due at different times (checkpoints CP)
+While the entire assignment is due on 10/18, in order to encourage you to make progress, different parts of this assignment will be due at different times (checkpoints CP)
 you may, of course, complete parts early):
 
 	* CP1 9/27
@@ -13,7 +13,7 @@ you may, of course, complete parts early):
 
 	* Extra Credit 10/18 
 
-For the first two checkpoints, you will demonstrate, in class, that your code works on the test examples given in the assignment.  If your code does not work on the test examples you will lose (up to) 5 points from your score for the assignment.  If it is evident that you have done no work toward meeting the checkpoint, 10 points will be deducted.  For the last checkpoint, you will turn in the code for your completed parser and I will test the cons pair section and run additional tests to look at the functionality of for the simple and arbitrary length arithmetic sections.  You will work with one other person in the class on this assignment, and you will be evaluating your partner and yourself as part of what you will turn in by the due date.  The form for that evaluation will be forthcoming.
+In addition to pushing your code to github, for the first two checkpoints, you will demonstrate, in class, that your code works on the test examples given in the assignment.  If your code does not work on the test examples you will lose (up to) 5 points from your score for the assignment.  If it is evident that you have done no work toward meeting the checkpoint, 10 points will be deducted.  For the last checkpoint, you will turn in the code for your completed parser and I will test the cons pair section and run additional tests to look at the functionality of for the simple and arbitrary length arithmetic sections.  You will work with one other person in the class on this assignment, and you will be evaluating your partner and yourself as part of what you will turn in by the due date.  The form for that evaluation will be forthcoming.
 
 ## Background
 Writing an interpreter for one language in another language is a great exercise to learn about interpreted languages, programming languages in general, the language you are interpreting, and the language you are writing the interpreter in.  In this programming assignment you will be using Java as well as ANTLR to build an interpreter for a very limited subset of Scheme, called ruse0.  (Note, you may choose to use a different programming language than Java, but you will not be able to use the code I am supplying.)
